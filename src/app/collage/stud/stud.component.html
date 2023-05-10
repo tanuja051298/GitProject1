@@ -1,0 +1,25 @@
+<p>stud works!</p>
+
+<div *ngIf="allData?.length > 0" class="container">
+    <table class="table table-primary">
+        <tr class="heading">
+            <th>Name</th>
+            <th>Email ID</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let dt of allData">
+            <td>{{dt.name}}</td>
+            <td>{{dt.eml}}</td>
+            <td>{{dt.gender}}</td>
+            <td>{{dt.city}}</td>
+            <td>{{dt.pass}}</td>
+            <td>
+                <button type="button" class="btn btn-danger"(click)="onDelete(dt)">Delete</button>
+            </td>
+        </tr>
+
+    </table>
+</div>

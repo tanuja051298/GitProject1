@@ -1,0 +1,30 @@
+ <div class="container" class="parent">
+<h2>Parent component</h2>
+	@Input will use property or attribute binding to send the data from parent to child. -->
+
+<!-- <app-innerchild [dataFromParent]="parentData"></app-innerchild> -->
+
+<!-- by using @Output and EventEmitter<any>() =>  to send the data from child to parent. -->
+<app-innerchild [dataFromParent]="parentData" (dataEvent)="fetchDataFromChild($event)"></app-innerchild>
+
+<!-- <p>Data from inner child <b>{{childData}}</b></p> -->
+
+
+<app-outerchild [dataFromParent2]="parentData2"></app-outerchild>
+
+<!-- by using @ViewChild and  ngAfterViewInit() method -->
+<app-outerchild></app-outerchild>
+
+<h2>End of parent component</h2>
+
+</div>  
+
+
+
+
+<!-- <div>
+    <h2>Parent Comp</h2>
+    <app-innerchild [dataFromParent]="parentData"></app-innerchild>
+
+    <h2>End of parent comp</h2>
+</div> -->

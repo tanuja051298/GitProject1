@@ -1,0 +1,20 @@
+table, th, td{
+    border: 1px solid  green;
+}
+.table{
+    width: 75%;
+    border: 2px solid green;
+    
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+tr:hover {
+    background-color: coral;
+}
+th {
+    background-color: #04AA6D;
+    color: rgb(8, 8, 8);
+}

@@ -1,0 +1,31 @@
+.formtable{
+    align-items: center;
+    margin-top: 75px;
+    flex-direction: column;
+    width: 400px;
+    padding: 15px;
+    border: 1px solid rgb(175, 171, 171);
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.2);;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.214), 0 6px 20px 0 rgba(0, 0, 0, 0.252);
+}
+table, th, td{
+    border: 1px solid  rgb(246, 248, 138);
+}
+.table{
+    width: 75%;
+    border: 2px solid rgb(244, 235, 139);
+    
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+tr:hover {
+    background-color: rgb(221, 161, 139);
+}
+th {
+    background-color: #57c59c;
+    color: rgb(8, 8, 8);
+}

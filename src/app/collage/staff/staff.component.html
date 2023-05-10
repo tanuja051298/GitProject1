@@ -1,0 +1,75 @@
+<p>staff works!</p>
+<div class="formtable container">
+    <h2>Staff Registration Form</h2>
+    <div class="form-group">
+    <form name="myform" #frm ="ngForm" (ngSubmit)="onSubmitData(frm)">
+      
+        <div class="form-group">
+            <input type="hidden" name="id" #id="ngModel" ngModel [(ngModel)]="idd">
+        </div>
+
+        <div class="form-group">
+            <label for="firstName">Name:</label>
+            <input type="text" name="name" class="form-control" #name="ngModel" ngModel [(ngModel)]="n">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Id:</label>
+            <input type="email" name="eml" class="form-control" #eml="ngModel" ngModel [(ngModel)]="el">
+        </div>
+
+
+        <div class="form-group">
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" class="radio" value="male" #gender="ngModel" ngModel [(ngModel)]="gen">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" class="radio" value="female" #gender="ngModel" ngModel [(ngModel)]="gen">
+            <label for="female">Female</label>
+        </div>
+
+        <div class="form-group">
+            <label for="city">City:</label>
+            <select name="city" id="" class="form-control" #city="ngModel" ngModel [(ngModel)]="cit">
+                <option *ngFor="let city of citys">{{city}}</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="pass" class="form-control" #pass="ngModel" ngModel [(ngModel)]="ps">
+        </div><br>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-success">Submit</button>
+            <br><br>
+            <button type="button" class="btn btn-info" (click)="onClickUpdate(frm)">Reset</button>
+
+        </div>
+    </form>
+</div>
+</div><br>
+
+<div *ngIf="allData?.length > 0" class="container">
+    <table class="table table-primary">
+        <tr class="heading">
+            <th>Name</th>
+            <th>Email ID</th>
+            <th>Gender</th>
+            <th>City</th>
+            <th>Password</th>
+            <th>Action</th>
+        </tr>
+        <tr *ngFor="let dt of allData">
+            <td>{{dt.name}}</td>
+            <td>{{dt.eml}}</td>
+            <td>{{dt.gender}}</td>
+            <td>{{dt.city}}</td>
+            <td>{{dt.pass}}</td>
+            <td>
+                <button type="button" class="btn btn-warning" (click)=" onUpdate(dt)">Update</button>
+            </td>
+        </tr>
+
+    </table>
+</div>

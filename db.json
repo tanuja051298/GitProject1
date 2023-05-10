@@ -1,0 +1,36 @@
+{
+  "student": [
+    {
+      "name": "Tanuja Jadhav ",
+      "eml": "tanuja@gmail.com",
+      "gender": "female",
+      "city": "Pune",
+      "pass": "123",
+      "id": "BrJHfhM"
+    },
+    {
+      "name": "Tushar",
+      "eml": "tushar12@gmail.com",
+      "gender": "male",
+      "city": "Goa",
+      "pass": "741",
+      "id": "kz60DCa"
+    },
+    {
+      "id": "C5OQ92S",
+      "name": "Alex",
+      "eml": "alex@gmail.com",
+      "gender": "male",
+      "city": "Mumbai",
+      "pass": "701"
+    },
+    {
+      "name": "Tejal",
+      "eml": "tejal@gmail.com",
+      "gender": "female",
+      "city": "Goa",
+      "pass": "456",
+      "id": "pzegyip"
+    }
+  ]
+}
